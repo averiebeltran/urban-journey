@@ -1,0 +1,13 @@
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+.portfolio-header {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #AC3B61;
+}
