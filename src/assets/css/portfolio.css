@@ -11,3 +11,8 @@
     margin-bottom: 20px;
     color: #AC3B61;
 }
+
+.wrapper {
+    width: 80%;
+    display: flex;
+}
