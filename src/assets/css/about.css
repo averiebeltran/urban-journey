@@ -1,12 +1,33 @@
 .about-me {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding: 16px;
     font-size: 18px;
+    background-color: #EEE2DC;
+}
+
+.about-me h1 {
+    margin-top: 0;
+    color: #AC3B61;
+}
+
+.content {
+    background-color: white;
+    padding: 24px;
+    box-shadow: rgba(186, 178, 181, 1) 0px 7px 29px 0px;
+    border-radius: 5px;
+}
+
+.about-me p {
+    margin-top: 0;
+    margin-bottom: 16px;
 }
 
 @media (min-width: 768px) {
     .about-me {
         font-size: 20px;
         padding: 24px 48px;
+    }
+
+    .about-me p {
+
     }
 }

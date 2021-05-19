@@ -20,10 +20,10 @@ class Portfolio extends Component {
                                     <div className="portfolio-item">
                                         <p>{item.title}</p>
                                         <img src={item.imgUrl} />
-                                        <a href={item.url}>Link to application</a>
-                                        <a href={item.github}>
-                                            <FontAwesomeIcon icon={faGithub} className="icon" size='2x' />
-                                        </a>
+                                        <div className="item-links">
+                                            <a href={item.url} target="_blank">Link to application</a>
+                                            <a href={item.github} target="_blank">Github</a>
+                                        </div>
                                     </div>
                                 );
                             })
