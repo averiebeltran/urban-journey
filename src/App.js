@@ -4,8 +4,6 @@ import Home from "./pages/home";
 import About from "./pages/about";
 import Portfolio from "./pages/portfolio";
 import Contact from "./pages/contact";
-import resumeData from "./resume-data";
-// import Resume from "./pages/resume";
 
 const App = () => (
   <Router>
@@ -14,7 +12,7 @@ const App = () => (
         <Route exact path="/" component={Home} />
         <Route exact path="/about" component={About} />
         <Route exact path="/contact" component={Contact} />
-        <Route exact path="/portfolio" component={Portfolio} resumeData={resumeData} />
+        <Route exact path="/portfolio" component={Portfolio} />
       </Switch>
     </React.Fragment>
   </Router>
