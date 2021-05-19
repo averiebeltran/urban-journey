@@ -37,8 +37,8 @@
 }
 
 .portfolio-item img {
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: auto;
     border: 1px solid black;
 }
 
@@ -61,6 +61,10 @@
     .portfolio-item {
         width: 40%;
     }
+
+    .portfolio-item img {
+        height: 120px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -74,5 +78,9 @@
 
     .wrapper {
         width: 80%;
+    }
+
+    .portfolio-item img {
+        max-height: 200px;
     }
 }

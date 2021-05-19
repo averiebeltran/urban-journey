@@ -14,6 +14,10 @@ class Contact extends Component {
                     <div className="contact-header">Get in touch.</div>
                     <Form>
                         <Form.Group controlId="exampleForm.ControlInput1">
+                            <Form.Label>Enter your name:</Form.Label>
+                            <Form.Control type="text" placeholder="John Doe" />
+                        </Form.Group>
+                        <Form.Group controlId="exampleForm.ControlInput1">
                             <Form.Label>Enter your email:</Form.Label>
                             <Form.Control type="email" placeholder="name@example.com" />
                         </Form.Group>

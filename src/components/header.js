@@ -6,15 +6,27 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
     const [showMenu, setShowMenu] = React.useState(false);
-    const displayMenu = () => setShowMenu(true);
+    const displayMenu = () => setShowMenu(!showMenu);
 
     return (
         <header className="header">
-            <h1>Averie Beltran</h1>
-            <div className="mobile-nav">
-                <FontAwesomeIcon icon={faBars} className="menu" size='2x' onClick={displayMenu} />
-                { showMenu ? <Nav /> : null }
+            <div className="nav">
+                <a href="/"><h1>Averie Beltran</h1></a>
+                <FontAwesomeIcon
+                    icon={faBars}
+                    className="menu"
+                    size='2x'
+                    onClick={displayMenu}
+                    aria-hidden="true"
+                />
+                <div className="desktop-nav">
+                    <Nav />
+                </div>
             </div>
+            { showMenu
+                ? <div className="mobile-nav"><Nav /></div>
+                : null
+            }
         </header>
     );
 };

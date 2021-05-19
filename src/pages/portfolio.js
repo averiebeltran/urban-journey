@@ -19,7 +19,7 @@ class Portfolio extends Component {
                                 return (
                                     <div className="portfolio-item">
                                         <p>{item.title}</p>
-                                        <img src={item.imgUrl} />
+                                        <img src={item.image} />
                                         <div className="item-links">
                                             <a href={item.url} target="_blank">Link to application</a>
                                             <a href={item.github} target="_blank">Github</a>

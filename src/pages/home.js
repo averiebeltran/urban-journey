@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
-import Header from '../components/header';
+import Nav from '../components/nav';
+import '../assets/css/home.css';
 
 class Home extends Component {
     render() {
         return(
-            <Header />
+            <div className="home">
+                <h1>Averie Beltran</h1>
+                <Nav />
+            </div>
         );
     }
 }

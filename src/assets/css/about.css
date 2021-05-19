@@ -9,14 +9,25 @@
     color: #AC3B61;
 }
 
-.content {
+.container{
     background-color: white;
     padding: 24px;
     box-shadow: rgba(186, 178, 181, 1) 0px 7px 29px 0px;
     border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.about-me p {
+.profile-img {
+    background: url('../images/averie.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 300px;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.content p {
     margin-top: 0;
     margin-bottom: 16px;
 }
@@ -27,7 +38,22 @@
         padding: 24px 48px;
     }
 
-    .about-me p {
+    .container{
+        flex-wrap: nowrap;
+    }
 
+    .profile-img {
+        width: 30%;
+    }
+
+    .content {
+        width: 70%;
+        margin-left: 30px;
+    }
+}
+
+@media (min-width: 768px) {
+    .profile-img {
+        height: 500px;
     }
 }
